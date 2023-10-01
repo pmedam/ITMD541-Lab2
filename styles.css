@@ -46,13 +46,18 @@ list-style: none;
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 
 #flex-section3 .tags ul {
 	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 3;
+	padding:0
 
 }
 
@@ -61,8 +66,12 @@ list-style: none;
 
 /* Grid Part 1 */
 
-#grid-section1 .grid {
-
+#grid-section1 .grid 
+{
+	display: grid;
+	grid-template-columns:repeat(4,1fr);
+	grid-template-rows: 100px 100px;
+	grid-gap: 20px;
 }
 
 /* end Grid Part 1 */

@@ -138,12 +138,14 @@
 	padding: 20px;
 	text-decoration: none;
 	transition: background-color 3s;
+	/*added 3seconds wait to revert back to idle state*/
 }
 
 #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
 	transition-duration: 0.5s;
+	/*added 0.5 seconds to make the transition work.*/
 }
 
 

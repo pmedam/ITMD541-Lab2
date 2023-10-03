@@ -1,11 +1,13 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
-display: flex;
-justify-content:space-evenly;
-margin:0;
-padding:0;
-list-style: none;
+	display: flex; 
+	justify-content:space-evenly;
+	/*justify-content: space-evenly gives even spaces in between the buttons*/
+	margin:0;
+	padding:0;
+	list-style: none;
+	/*list-style: none will remove the points from the UL */
 }
 
 /* end Flexbox Part 1 */
@@ -14,11 +16,10 @@ list-style: none;
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-	list-style-type: none;
 	display: flex;
 	margin: 0;
 	padding: 0;
-
+	list-style-type: none;
 	}
 
 #flex-section2 li {
@@ -98,6 +99,9 @@ list-style: none;
 #grid-section3 .grid {
 
 	display: grid;
+	grid-template-columns: 450px;
+	grid-template-rows: 100px 300px 100px;
+	grid-gap: 10px;
 }
 
 #grid-section3 .box1 {
@@ -109,12 +113,11 @@ list-style: none;
 #grid-section3 .box2 {
 	order: 3;
 	grid-column: 2/3;
-	grid-gap:20;
-
 }
 
 #grid-section3 .box3 {
 	order: 2;
+
 	
 }
 
@@ -139,6 +142,7 @@ list-style: none;
 #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
+	transition-duration: 0.5s;
 }
 
 /* end Transition Part */
